@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.25928.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8F46AF12-F2C7-45C2-8DD8-CB6597E78718}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlSaturdayCoreUI", "src\SqlSaturdayCoreUI\SqlSaturdayCoreUI.csproj", "{4F960114-5804-4F5D-9353-A52FAA1B55EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F960114-5804-4F5D-9353-A52FAA1B55EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F960114-5804-4F5D-9353-A52FAA1B55EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F960114-5804-4F5D-9353-A52FAA1B55EE}.Debug|x64.ActiveCfg = Debug|x64
+		{4F960114-5804-4F5D-9353-A52FAA1B55EE}.Debug|x64.Build.0 = Debug|x64
+		{4F960114-5804-4F5D-9353-A52FAA1B55EE}.Debug|x86.ActiveCfg = Debug|x86
+		{4F960114-5804-4F5D-9353-A52FAA1B55EE}.Debug|x86.Build.0 = Debug|x86
+		{4F960114-5804-4F5D-9353-A52FAA1B55EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F960114-5804-4F5D-9353-A52FAA1B55EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F960114-5804-4F5D-9353-A52FAA1B55EE}.Release|x64.ActiveCfg = Release|x64
+		{4F960114-5804-4F5D-9353-A52FAA1B55EE}.Release|x64.Build.0 = Release|x64
+		{4F960114-5804-4F5D-9353-A52FAA1B55EE}.Release|x86.ActiveCfg = Release|x86
+		{4F960114-5804-4F5D-9353-A52FAA1B55EE}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

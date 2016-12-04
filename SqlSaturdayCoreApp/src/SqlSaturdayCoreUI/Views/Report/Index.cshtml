@@ -1,0 +1,46 @@
+﻿@model ReportViewModel
+@{
+    ViewData["Title"] = "Azure Power BI Service Embedded Reports";
+
+    Layout = null;
+
+    var classNames = "panel panel-default dropdown";
+
+    if (this.Request.Path.IndexOf("Report") > -1)
+    {
+        classNames += " active";
+    }
+}
+
+<form asp-controller="Report" asp-action="Index" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="form-horizontal">
+    <h2>@ViewData["Title"]</h2>
+    <hr />
+    @*<div class="form-group">
+        <label asp-for="BrowserRemembered" class="col-md-2 control-label"></label>
+        <div class="col-md-10">
+            <input asp-for="BrowserRemembered" class="form-control" />
+            <span asp-validation-for="BrowserRemembered" class="text-danger"></span>
+        </div>
+    </div>*@
+    <div class="form-group">
+        <li class="@classNames">
+            <a data-toggle="collapse" href="#reports-nav">
+                <span class="icon fa fa-bar-chart"></span><span class="title">Reports</span>
+            </a>
+            <!-- Dropdown level 1 -->
+            <div id="reports-nav" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <ul class="nav navbar-nav">
+                        @foreach (var report in Model.Reports)
+                {
+                    var reportClass = Request.QueryString["reportId"] == report.Id ? "active" : "";
+                            <li class="@reportClass">
+                                @Html.ActionLink(report.Name, "Report", new { reportId = report.Id })
+                            </li>
+                }
+                    </ul>
+                </div>
+            </div>
+        </li>
+    </div>
+</form>
