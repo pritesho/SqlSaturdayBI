@@ -1,0 +1,10 @@
+﻿@model IndexViewModel
+@{
+    ViewData["Title"] = "Azure Power BI Service Embedded Reports";
+}
+
+<form asp-controller="Report" asp-action="Index" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="form-horizontal">
+    <h2>@ViewData["Title"]</h2>
+    <hr />
+   
+</form>

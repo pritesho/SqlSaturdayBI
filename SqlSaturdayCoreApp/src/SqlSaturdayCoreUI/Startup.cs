@@ -12,6 +12,7 @@ using Microsoft.Extensions.Logging;
 using SqlSaturdayCoreUI.Data;
 using SqlSaturdayCoreUI.Models;
 using SqlSaturdayCoreUI.Services;
+using SqlSaturdayCoreUI.Common;
 
 namespace SqlSaturdayCoreUI
 {
@@ -52,7 +53,8 @@ namespace SqlSaturdayCoreUI
             // Add application services.
             services.AddTransient<IEmailSender, AuthMessageSender>();
             services.AddTransient<ISmsSender, AuthMessageSender>();
-
+            // Add our Config object so it can be injected
+            services.Configure<PowerBISettings>(Configuration.GetSection("PowerBISettings"));
             services.Configure<IdentityOptions>(options =>
             {
                 // Password settings

@@ -1,0 +1,6 @@
+C:\Projects\SqlSaturdayCoreApp\src\SqlSaturdayCoreApp\bin\Debug\netcoreapp1.0\SqlSaturdayCoreApp.dll
+C:\Projects\SqlSaturdayCoreApp\src\SqlSaturdayCoreApp\bin\Debug\netcoreapp1.0\SqlSaturdayCoreApp.pdb
+C:\Projects\SqlSaturdayCoreApp\src\SqlSaturdayCoreApp\obj\Debug\netcoreapp1.0\SqlSaturdayCoreApp.csprojResolveAssemblyReference.cache
+C:\Projects\SqlSaturdayCoreApp\src\SqlSaturdayCoreApp\obj\Debug\netcoreapp1.0\SqlSaturdayCoreApp.AssemblyInfo.cs
+C:\Projects\SqlSaturdayCoreApp\src\SqlSaturdayCoreApp\obj\Debug\netcoreapp1.0\SqlSaturdayCoreApp.dll
+C:\Projects\SqlSaturdayCoreApp\src\SqlSaturdayCoreApp\obj\Debug\netcoreapp1.0\SqlSaturdayCoreApp.pdb
