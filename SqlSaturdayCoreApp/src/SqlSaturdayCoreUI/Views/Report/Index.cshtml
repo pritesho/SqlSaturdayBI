@@ -1,19 +1,32 @@
 ﻿@model ReportViewModel
 @{
-    ViewData["Title"] = "Azure Power BI Service Embedded Reports";   
+    ViewData["Title"] = "Azure Power BI Service Embedded Reports";
 }
 
-<form asp-controller="Report" asp-action="Index" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="form-horizontal">
-    <h2>@ViewData["Title"]</h2>
-    <hr />
-    @*<div class="form-group">
-        <label asp-for="BrowserRemembered" class="col-md-2 control-label"></label>
-        <div class="col-md-10">
-            <input asp-for="BrowserRemembered" class="form-control" />
-            <span asp-validation-for="BrowserRemembered" class="text-danger"></span>
-        </div>
-    </div>*@
-    <div class="form-group">
-        
-    </div>
-</form>
+<script src="~/lib/powerbi-client/dist/powerbi.js"></script>
+<script src="~/js/report.js"></script>
+<script>
+      powerbi.enableAutoEmbed();
+</script>
+
+<html>
+    <body > 
+               
+        <form asp-controller="Report" asp-action="Index" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="form-horizontal">
+            @*<form>*@
+            <h2>@ViewData["Title"]</h2>
+            <h4>Power BI JavaScript</h4>           
+            <hr />         
+
+            <div class="form-group">
+                <div class="row">
+                        
+                    <div style="display:block;overflow:auto;min-height: 100%;" powerbi-type="report"
+                         powerbi-access-token="@Model.EmbedToken"
+                         powerbi-report-id="d3fa6537-83c1-4a9c-b165-c34e8448fd96"
+                         powerbi-embed-url="https://embedded.powerbi.com/appTokenReportEmbed"></div>                  
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

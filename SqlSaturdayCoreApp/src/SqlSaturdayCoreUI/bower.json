@@ -6,6 +6,11 @@
     "jquery": "2.2.0",
     "jquery-validation": "1.14.0",
     "jquery-validation-unobtrusive": "3.2.6",
+    "powerbi-client": "v2.2.1",
+    "angular": "v1.5.10-build.5180+sha.7a667c7",
+    "angular-powerbi": "v1.0.0"
+  },
+  "resolutions": {
     "powerbi-client": "v2.2.1"
   }
 }

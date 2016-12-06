@@ -1,0 +1,32 @@
+{
+  "name": "angular-powerbi",
+  "description": "Angular library which contains components to embed PowerBi visuals.",
+  "main": "dist/angular-powerbi.js",
+  "authors": [
+    "Microsoft PowerBI Team"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "microsoft",
+    "angular",
+    "powerbi",
+    "embedded",
+    "visuals"
+  ],
+  "homepage": "https://github.com/Microsoft/PowerBI-Angular",
+  "ignore": [
+    "**/.*",
+    "*.js",
+    "*.json",
+    "*.md",
+    "node_modules",
+    "bower_components",
+    "coverage",
+    "typings",
+    "test"
+  ],
+  "dependencies": {
+    "powerbi-client": "2.1.0",
+    "angular": "^1.5.5"
+  }
+}
