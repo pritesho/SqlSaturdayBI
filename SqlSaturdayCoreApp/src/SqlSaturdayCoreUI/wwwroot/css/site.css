@@ -48,3 +48,10 @@ textarea {
     display: none
   }
 }
+
+.iframe-container {
+    position: relative;
+    padding-bottom: 25%;
+    height: 900px;
+    overflow: hidden;
+}

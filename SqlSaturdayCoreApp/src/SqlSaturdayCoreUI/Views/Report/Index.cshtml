@@ -17,16 +17,30 @@
             <h2>@ViewData["Title"]</h2>
             <h4>Power BI JavaScript</h4>           
             <hr />         
-
             <div class="form-group">
                 <div class="row">
-                        
-                    <div style="display:block;overflow:auto;min-height: 100%;" powerbi-type="report"
+                    This article includes a sortable table listing the 50 United States by population density, population rank, and land area.
+                    It also includes a sortable table of Density by states, divisions, regions and territories by population rank and land area, and a sortable table for Density by states, divisions, regions and territories in square miles and square kilometers.
+                    Population density is calculated as resident population divided by total land area. Resident population is from the United States Census Bureau estimates for July 1, 2015, for the 50 states, the District of Columbia and Puerto Rico and from the 2010 Census for the other four United States territories (which is the latest data available as of March 5, 2016.)  Total land area is from the 2010 Census.
+                    The population density of the United States is relatively low compared to many other developed countries due to its size and the advent of modern transportation during its settlement. For example, the population density of the U.S. is one-twelfth that of the Netherlands and one-fifteenth that of South Korea.
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div  style="display:block;overflow:hidden;width:900px;height:900px;">
+                    @*style="display:block;overflow:auto;border-style: none; width: 100%; height: 100%"*@ 
+                    <div class="iframe-container"
+                         height="auto" width="auto" border="0px"
+                         powerbi-type="report"
                          powerbi-access-token="@Model.EmbedToken"
                          powerbi-report-id="d3fa6537-83c1-4a9c-b165-c34e8448fd96"
                          powerbi-embed-url="https://embedded.powerbi.com/appTokenReportEmbed"></div>                  
                 </div>
             </div>
+
+            
+
         </form>
+        
     </body>
 </html>
